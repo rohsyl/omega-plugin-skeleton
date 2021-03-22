@@ -1,0 +1,36 @@
+{
+    "name": "rohsyl/omega-plugin-skeleton",
+    "description": "OmegaCMS Plugin Skeleton",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "rohsyl",
+            "email": "syzin12@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/auth": "^8.0",
+        "illuminate/container": "^8.0",
+        "illuminate/contracts": "^8.0",
+        "illuminate/database": "^8.0",
+        "laravelcollective/html": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "rohsyl\\OmegaPlugin\\[PluginName]\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "rohsyl\\OmegaPlugin\\[PluginName]\\ServiceProvider"
+            ]
+        }
+    }
+}
