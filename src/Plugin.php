@@ -4,6 +4,7 @@ namespace rohsyl\OmegaPlugin\[PluginName];
 use rohsyl\OmegaCore\Utils\Common\Plugin\Form\PluginFormFactory;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Plugin as OmegaPlugin;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Type\TextSimple\TextSimple;
+use rohsyl\OmegaPlugin\[PluginName]\Http\Controllers\Overt\PluginController
 
 class Plugin extends OmegaPlugin
 {
@@ -32,4 +33,10 @@ class Plugin extends OmegaPlugin
         });
 
     }
+	
+	
+    function overtController(): string
+    {
+		return PluginController::class;
+	}
 }
