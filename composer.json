@@ -10,20 +10,24 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "^7.4|^8.0",
-        "illuminate/auth": "^8.0",
-        "illuminate/container": "^8.0",
-        "illuminate/contracts": "^8.0",
-        "illuminate/database": "^8.0",
+        "php": ">=8.0.2",
+        "illuminate/contracts": "^9.0",
         "laravelcollective/html": "^6.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "^8.0"
+        "orchestra/testbench": "^7.0",
+        "nunomaduro/collision": "^6.0",
+        "phpunit/phpunit": "^9"
     },
     "autoload": {
         "psr-4": {
-            "rohsyl\\OmegaPlugin\\[PluginName]\\": "src"
+            "rohsyl\\OmegaPlugin\\[PluginName]\\": "src",
+            "rohsyl\\OmegaPlugin\\[PluginName]\\\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "rohsyl\\OmegaPlugin\\[PluginName]\\Tests\\": "tests"
         }
     },
     "extra": {
